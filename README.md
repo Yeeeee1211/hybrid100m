@@ -21,23 +21,29 @@ CPU 推理     解码 97~109 tok/s、预填充 108~118 tok/s（8 线程，Q8）
 
 本仓库**只包含代码**，模型权重托管在 Hugging Face：
 
+**🤗 [Yeeee1211/hyBird-100M](https://huggingface.co/Yeeee1211/hyBird-100M)**
+
 ```bash
-# 方式一：huggingface-cli
+# 方式一：huggingface-cli（推荐）
 pip install -U "huggingface_hub[cli]"
-huggingface-cli download <你的用户名>/hybrid100m-sft2 --local-dir 01-model
+huggingface-cli download Yeeee1211/hyBird-100M --local-dir 01-model
 
 # 方式二：git lfs
 git lfs install
-git clone https://huggingface.co/<你的用户名>/hybrid100m-sft2 01-model
+git clone https://huggingface.co/Yeeee1211/hyBird-100M 01-model
+
+# 方式三：浏览器直接下载单个文件
+# https://huggingface.co/Yeeee1211/hyBird-100M/tree/main
 ```
 
-下载后目录应为：
+下载后 `01-model/` 目录应为：
 
 ```
 01-model/
-├── sft2_q8.h100         ← C++ 引擎直接加载这个（97.3 MiB）
+├── sft2_q8.h100         ← C++ 引擎直接加载这个（97.3 MiB，INT8 Q8）
 ├── model.pt             FP32 权重（可选，做 FP32 推理或继续训练时用）
-└── config.json          模型配置
+├── config.json          模型配置
+└── tokenizer.json       分词器
 ```
 
 然后即可运行：
@@ -46,7 +52,7 @@ git clone https://huggingface.co/<你的用户名>/hybrid100m-sft2 01-model
 .\03-engine\build\hybrid-cpu-native.exe chat --model 01-model\sft2_q8.h100 --threads 8 --ctx 2048 --prompt "你好"
 ```
 
-> 若暂时不想下载权重，也可以只克隆代码、自行训练（见 §4.2），或用 `03-engine/export.py`
+> 若暂时不想下载权重，也可以只克隆代码自行训练（见 §4.2），或用 `03-engine/export.py`
 > 从自己的 checkpoint 导出 `.h100`。
 
 ---
@@ -57,9 +63,9 @@ git clone https://huggingface.co/<你的用户名>/hybrid100m-sft2 01-model
 
 预训练与 SFT 数据均来自开源数据集 **`gongjy/minimind_dataset`**：
 
-- 数据集主页：<https://www.modelscope.cn/datasets/gongjy/minimind_dataset>
+- 数据集主页（ModelScope）：<https://www.modelscope.cn/datasets/gongjy/minimind_dataset>
 - 上游项目（数据与训练方法参考）：<https://github.com/jingyaogong/minimind>
-- Hugging Face 镜像：<https://huggingface.co/datasets/jingyaogong/minimind_dataset>
+- 上游模型合集（Hugging Face）：<https://huggingface.co/collections/jingyaogong/minimind>
 
 > ⚠️ **数据许可证提醒：该数据集标注为 CC-BY-NC-4.0（署名—非商业性使用）。**
 > 本仓库的**代码**采用 MIT 许可证；但由该数据集训练得到的**模型权重**受数据来源条款约束，
@@ -254,6 +260,12 @@ attention scaling `1 + 0.1*log(5)` 同时作用于 cos/sin。**训练全程频�
 **失败规律**：单约束基本能满足，**加上第二条约束即开始退化**（重复循环或丢掉后半句要求）。
 这是 104M 参数规模 + 通用对话 SFT 数据的**能力天花板**，不是调参能解决的。
 完整 16 项明细见 [`02-source/TESTING.md`](02-source/TESTING.md)。
+
+### 3.4 本模型不能做什么（重要）
+
+**纯自研架构 + 自定义 `.h100` 格式，因此无法在 Hugging Face 网页端在线试玩**，
+也不兼容 `transformers` 的 `AutoModelForCausalLM`（没有对应的 modeling 实现）。
+使用方式是：下载权重 → 用本仓库的 C++ 引擎运行，或按 §4.2 自行训练 / 自行写推理代码。
 
 ---
 
