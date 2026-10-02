@@ -1,0 +1,9 @@
+{
+  "run": "sft_2",
+  "params": 104555708,
+  "state_dict_tensors": 292,
+  "question": "用一句话解释什么是机器学习。",
+  "answer": "\n机器学习是通过数据和算法让计算机从数据中学习，从而自动改进性能的技术。它基于训练数据和反馈机制，通过调整模型参数来优化预测或决策。\n",
+  "stopped_correctly": true,
+  "cpu_tok_per_s": 3.45
+}

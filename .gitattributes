@@ -1,0 +1,21 @@
+# 统一换行与二进制判定，避免跨平台 diff 噪音
+* text=auto eol=lf
+
+# 已编译二进制：不做换行转换、diff 时按二进制处理
+*.exe  binary
+*.dll  binary
+*.so   binary
+*.dylib binary
+*-linux-x64 binary
+*.h100 binary
+*.pt   binary
+
+# 文本类型显式声明
+*.py   text diff=python
+*.cpp  text diff=cpp
+*.hpp  text diff=cpp
+*.md   text
+*.json text
+*.txt  text
+*.sh   text eol=lf
+*.ps1  text eol=crlf

@@ -1,0 +1,32 @@
+hybrid100m 预训练存档 —— runs/pre_full
+=========================================================
+架构   : 20 层混合主干（15 × KDA 线性注意力 + 5 × Gated GQA），hidden 512，MTP 1 层
+参数量 : 104,555,708（embedding 与 LM head 共享）
+词表   : 32,768（11 个特殊 token，id 与旧版完全一致）
+训练   : 12,328 步 = 1 个完整 epoch，每步 131,072 tokens（mb 32 × accum 2 × seq 2048）
+         语料 1,615.9M tokens（data_full/train.bin），共 1.616B tokens
+优化器 : Muon（隐藏矩阵）+ AdamW（embedding/向量），lr 3e-4 余弦退火到 3e-5，warmup 500
+吞吐   : 约 66K tok/s（RTX 4090，显存 8.24 GiB）
+最终验证 loss: 1.4434（step 12000）/ 1.4519（step 12200）；训练 loss 约 2.45
+
+本机独立验证（CPU，tools/verify_local_checkpoint.py）:
+  - state_dict 292 张量严格加载通过，参数量与配置一致
+  - 前向 logits 形状 (1,3,32768) 且全部有限
+  - 贪心生成可读中文：「实现人工智能的重要手段之一。机器学习是指」
+=========================================================
+
+生成时间: 2026-10-01 22:41:37
+
+file                        bytes  sha256
+model.pt                418311847  90ebfa784b32154ce28fd7b3e17f19a9bab2dcf9512658d6bae246ea66df3969
+                                   ^ 推理/微调用权重（主干，无 MTP、无优化器状态）
+config.json                   847  114ae9d453f8ee095b2ebf3ba5bac17066067b717553ee5240d48afde03f33b2
+                                   ^ 模型配置（20 层 KDA + MTP，与权重严格配套）
+ckpt.pt                 904270642  671f0325154663adfc6984b53622b410f67610998a87b3729c7837aaecf4fc13
+                                   ^ 完整训练存档（含 optimizer + RNG，可 --resume 继续预训练）
+train.log                   64964  b1b00a539aa0afebd5c03997222edf7d6da2517779ce1ae3a9da2bec73209e61
+                                   ^ 完整训练日志（12,328 步，含每次验证 loss）
+tokenizer.json            2803345  e2d0d98d545017b0eca0831c6ed43d7efa23813bfbed65c01f77abf841784a28
+                                   ^ 训练用 tokenizer（vocab 32768，与权重 token 映射严格对齐）
+verify_local.json             280  cf319c2b71ddd8ff445ad8b1789a199d2d3d734a73ac82927a65b16bd89db678
+                                   ^ 本机 CPU 独立验证结果

@@ -1,0 +1,702 @@
+nohup: ignoring input
+GPU: NVIDIA GeForce RTX 4090 | 参数量: 104,555,708
+结构: 15 线性层 + 5 全注意力层, seq_len=2048, micro_batch=32, accum=2
+数据: train 1615.9M tokens, val 5.0M tokens
+已从 step 245 恢复训练
+开始训练: 12328 步, 每步 131,072 tokens (fp32 参数 + bf16 autocast, loss_chunk=128)
+step    260/12328 | loss 7.3573 | lr 1.56e-04 | grad_norm 1.96 | 60.2K tok/s | 显存 8.24/9.14 GiB
+step    280/12328 | loss 7.1833 | lr 1.68e-04 | grad_norm 2.57 | 65.4K tok/s | 显存 8.24/9.14 GiB
+step    300/12328 | loss 6.9709 | lr 1.80e-04 | grad_norm 2.39 | 65.6K tok/s | 显存 8.24/9.14 GiB
+step    320/12328 | loss 6.7188 | lr 1.92e-04 | grad_norm 2.29 | 65.5K tok/s | 显存 8.24/9.14 GiB
+step    340/12328 | loss 6.5886 | lr 2.04e-04 | grad_norm 2.24 | 65.4K tok/s | 显存 8.24/9.14 GiB
+step    360/12328 | loss 6.4255 | lr 2.16e-04 | grad_norm 2.32 | 65.4K tok/s | 显存 8.24/9.14 GiB
+step    380/12328 | loss 6.2430 | lr 2.28e-04 | grad_norm 2.06 | 65.6K tok/s | 显存 8.24/9.14 GiB
+step    400/12328 | loss 6.0761 | lr 2.40e-04 | grad_norm 2.27 | 65.4K tok/s | 显存 8.24/9.14 GiB
+step    400 | 验证 loss 3.9734
+step    400 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step    420/12328 | loss 5.9150 | lr 2.52e-04 | grad_norm 1.98 | 59.3K tok/s | 显存 8.24/9.14 GiB
+step    440/12328 | loss 5.7856 | lr 2.64e-04 | grad_norm 1.97 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step    460/12328 | loss 5.6327 | lr 2.76e-04 | grad_norm 1.64 | 65.5K tok/s | 显存 8.24/9.14 GiB
+step    480/12328 | loss 5.5187 | lr 2.88e-04 | grad_norm 1.86 | 65.4K tok/s | 显存 8.24/9.14 GiB
+step    500/12328 | loss 5.3513 | lr 3.00e-04 | grad_norm 1.81 | 65.6K tok/s | 显存 8.24/9.14 GiB
+step    520/12328 | loss 5.2609 | lr 3.00e-04 | grad_norm 1.40 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step    540/12328 | loss 5.1345 | lr 3.00e-04 | grad_norm 1.41 | 65.4K tok/s | 显存 8.24/9.14 GiB
+step    560/12328 | loss 5.0220 | lr 3.00e-04 | grad_norm 1.36 | 65.3K tok/s | 显存 8.24/9.14 GiB
+step    580/12328 | loss 4.9463 | lr 3.00e-04 | grad_norm 1.16 | 65.4K tok/s | 显存 8.24/9.14 GiB
+step    600/12328 | loss 4.8542 | lr 3.00e-04 | grad_norm 1.12 | 65.6K tok/s | 显存 8.24/9.14 GiB
+step    600 | 验证 loss 3.2733
+step    620/12328 | loss 4.7668 | lr 3.00e-04 | grad_norm 1.29 | 60.5K tok/s | 显存 8.24/9.14 GiB
+step    640/12328 | loss 4.6694 | lr 3.00e-04 | grad_norm 1.18 | 65.6K tok/s | 显存 8.24/9.14 GiB
+step    660/12328 | loss 4.6001 | lr 3.00e-04 | grad_norm 1.00 | 65.5K tok/s | 显存 8.24/9.14 GiB
+step    680/12328 | loss 4.5141 | lr 3.00e-04 | grad_norm 0.94 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step    700/12328 | loss 4.4662 | lr 3.00e-04 | grad_norm 0.97 | 65.6K tok/s | 显存 8.24/9.14 GiB
+step    720/12328 | loss 4.3734 | lr 3.00e-04 | grad_norm 0.90 | 47.7K tok/s | 显存 8.24/9.14 GiB
+step    740/12328 | loss 4.2921 | lr 3.00e-04 | grad_norm 0.96 | 65.6K tok/s | 显存 8.24/9.14 GiB
+step    760/12328 | loss 4.2721 | lr 3.00e-04 | grad_norm 0.91 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step    780/12328 | loss 4.2565 | lr 3.00e-04 | grad_norm 0.98 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step    800/12328 | loss 4.1914 | lr 3.00e-04 | grad_norm 0.94 | 65.5K tok/s | 显存 8.24/9.14 GiB
+step    800 | 验证 loss 2.8001
+step    800 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step    820/12328 | loss 4.0913 | lr 3.00e-04 | grad_norm 0.83 | 59.4K tok/s | 显存 8.24/9.14 GiB
+step    840/12328 | loss 4.0592 | lr 2.99e-04 | grad_norm 0.94 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step    860/12328 | loss 4.0298 | lr 2.99e-04 | grad_norm 0.94 | 65.6K tok/s | 显存 8.24/9.14 GiB
+step    880/12328 | loss 3.9906 | lr 2.99e-04 | grad_norm 0.86 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step    900/12328 | loss 3.9121 | lr 2.99e-04 | grad_norm 0.96 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step    920/12328 | loss 3.9075 | lr 2.99e-04 | grad_norm 0.87 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step    940/12328 | loss 3.8521 | lr 2.99e-04 | grad_norm 0.79 | 65.6K tok/s | 显存 8.24/9.14 GiB
+step    960/12328 | loss 3.8297 | lr 2.99e-04 | grad_norm 0.78 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step    980/12328 | loss 3.8146 | lr 2.99e-04 | grad_norm 0.72 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   1000/12328 | loss 3.7687 | lr 2.99e-04 | grad_norm 0.76 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   1000 | 验证 loss 2.5298
+step   1020/12328 | loss 3.7364 | lr 2.99e-04 | grad_norm 0.78 | 60.8K tok/s | 显存 8.24/9.14 GiB
+step   1040/12328 | loss 3.7324 | lr 2.99e-04 | grad_norm 0.80 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   1060/12328 | loss 3.6856 | lr 2.99e-04 | grad_norm 0.76 | 65.5K tok/s | 显存 8.24/9.14 GiB
+step   1080/12328 | loss 3.6808 | lr 2.98e-04 | grad_norm 0.73 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   1100/12328 | loss 3.6023 | lr 2.98e-04 | grad_norm 0.72 | 65.5K tok/s | 显存 8.24/9.14 GiB
+step   1120/12328 | loss 3.6462 | lr 2.98e-04 | grad_norm 0.83 | 65.6K tok/s | 显存 8.24/9.14 GiB
+step   1140/12328 | loss 3.5912 | lr 2.98e-04 | grad_norm 0.71 | 65.4K tok/s | 显存 8.24/9.14 GiB
+step   1160/12328 | loss 3.5622 | lr 2.98e-04 | grad_norm 0.79 | 65.6K tok/s | 显存 8.24/9.14 GiB
+step   1180/12328 | loss 3.5247 | lr 2.98e-04 | grad_norm 0.71 | 65.4K tok/s | 显存 8.24/9.14 GiB
+step   1200/12328 | loss 3.5172 | lr 2.98e-04 | grad_norm 0.69 | 65.5K tok/s | 显存 8.24/9.14 GiB
+step   1200 | 验证 loss 2.3045
+step   1200 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step   1220/12328 | loss 3.5094 | lr 2.98e-04 | grad_norm 0.72 | 59.0K tok/s | 显存 8.24/9.14 GiB
+step   1240/12328 | loss 3.4814 | lr 2.97e-04 | grad_norm 0.71 | 65.2K tok/s | 显存 8.24/9.14 GiB
+step   1260/12328 | loss 3.4327 | lr 2.97e-04 | grad_norm 0.76 | 65.5K tok/s | 显存 8.24/9.14 GiB
+step   1280/12328 | loss 3.4496 | lr 2.97e-04 | grad_norm 0.75 | 65.6K tok/s | 显存 8.24/9.14 GiB
+step   1300/12328 | loss 3.4514 | lr 2.97e-04 | grad_norm 0.66 | 65.5K tok/s | 显存 8.24/9.14 GiB
+step   1320/12328 | loss 3.4352 | lr 2.97e-04 | grad_norm 0.70 | 65.6K tok/s | 显存 8.24/9.14 GiB
+step   1340/12328 | loss 3.4381 | lr 2.97e-04 | grad_norm 0.67 | 65.5K tok/s | 显存 8.24/9.14 GiB
+step   1360/12328 | loss 3.3788 | lr 2.97e-04 | grad_norm 0.70 | 65.5K tok/s | 显存 8.24/9.14 GiB
+step   1380/12328 | loss 3.3969 | lr 2.96e-04 | grad_norm 0.73 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   1400/12328 | loss 3.3560 | lr 2.96e-04 | grad_norm 0.63 | 65.4K tok/s | 显存 8.24/9.14 GiB
+step   1400 | 验证 loss 2.1670
+step   1420/12328 | loss 3.3556 | lr 2.96e-04 | grad_norm 0.62 | 60.7K tok/s | 显存 8.24/9.14 GiB
+step   1440/12328 | loss 3.3725 | lr 2.96e-04 | grad_norm 0.75 | 65.6K tok/s | 显存 8.24/9.14 GiB
+step   1460/12328 | loss 3.3330 | lr 2.96e-04 | grad_norm 0.61 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   1480/12328 | loss 3.3046 | lr 2.95e-04 | grad_norm 0.65 | 65.6K tok/s | 显存 8.24/9.14 GiB
+step   1500/12328 | loss 3.3078 | lr 2.95e-04 | grad_norm 0.63 | 65.6K tok/s | 显存 8.24/9.14 GiB
+step   1520/12328 | loss 3.3163 | lr 2.95e-04 | grad_norm 0.70 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   1540/12328 | loss 3.3088 | lr 2.95e-04 | grad_norm 0.65 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   1560/12328 | loss 3.2826 | lr 2.95e-04 | grad_norm 0.72 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   1580/12328 | loss 3.2514 | lr 2.94e-04 | grad_norm 0.63 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   1600/12328 | loss 3.2666 | lr 2.94e-04 | grad_norm 0.61 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   1600 | 验证 loss 2.0675
+step   1600 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step   1620/12328 | loss 3.2333 | lr 2.94e-04 | grad_norm 0.66 | 59.6K tok/s | 显存 8.24/9.14 GiB
+step   1640/12328 | loss 3.2176 | lr 2.94e-04 | grad_norm 0.63 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   1660/12328 | loss 3.2618 | lr 2.94e-04 | grad_norm 0.62 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   1680/12328 | loss 3.1875 | lr 2.93e-04 | grad_norm 0.62 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   1700/12328 | loss 3.2041 | lr 2.93e-04 | grad_norm 0.59 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   1720/12328 | loss 3.2077 | lr 2.93e-04 | grad_norm 0.66 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   1740/12328 | loss 3.2057 | lr 2.93e-04 | grad_norm 0.59 | 65.6K tok/s | 显存 8.24/9.14 GiB
+step   1760/12328 | loss 3.1769 | lr 2.93e-04 | grad_norm 0.59 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   1780/12328 | loss 3.1983 | lr 2.92e-04 | grad_norm 0.66 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   1800/12328 | loss 3.1925 | lr 2.92e-04 | grad_norm 0.59 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   1800 | 验证 loss 1.9972
+step   1820/12328 | loss 3.1574 | lr 2.92e-04 | grad_norm 0.58 | 60.7K tok/s | 显存 8.24/9.14 GiB
+step   1840/12328 | loss 3.1554 | lr 2.92e-04 | grad_norm 0.61 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   1860/12328 | loss 3.1175 | lr 2.91e-04 | grad_norm 0.55 | 65.6K tok/s | 显存 8.24/9.14 GiB
+step   1880/12328 | loss 3.1475 | lr 2.91e-04 | grad_norm 0.59 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   1900/12328 | loss 3.1546 | lr 2.91e-04 | grad_norm 0.59 | 65.6K tok/s | 显存 8.24/9.14 GiB
+step   1920/12328 | loss 3.1304 | lr 2.91e-04 | grad_norm 0.56 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   1940/12328 | loss 3.1407 | lr 2.90e-04 | grad_norm 0.59 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   1960/12328 | loss 3.0883 | lr 2.90e-04 | grad_norm 0.61 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   1980/12328 | loss 3.1249 | lr 2.90e-04 | grad_norm 0.57 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   2000/12328 | loss 3.0852 | lr 2.89e-04 | grad_norm 0.61 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   2000 | 验证 loss 1.9696
+step   2000 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step   2020/12328 | loss 3.1148 | lr 2.89e-04 | grad_norm 0.60 | 59.4K tok/s | 显存 8.24/9.14 GiB
+step   2040/12328 | loss 3.0693 | lr 2.89e-04 | grad_norm 0.62 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   2060/12328 | loss 3.0730 | lr 2.89e-04 | grad_norm 0.61 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   2080/12328 | loss 3.0542 | lr 2.88e-04 | grad_norm 0.56 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   2100/12328 | loss 3.0750 | lr 2.88e-04 | grad_norm 0.55 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   2120/12328 | loss 3.0683 | lr 2.88e-04 | grad_norm 0.57 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   2140/12328 | loss 3.0723 | lr 2.87e-04 | grad_norm 0.59 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   2160/12328 | loss 3.0685 | lr 2.87e-04 | grad_norm 0.58 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   2180/12328 | loss 3.0449 | lr 2.87e-04 | grad_norm 0.59 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   2200/12328 | loss 3.0625 | lr 2.86e-04 | grad_norm 0.53 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   2200 | 验证 loss 1.9253
+step   2220/12328 | loss 3.0113 | lr 2.86e-04 | grad_norm 0.58 | 60.9K tok/s | 显存 8.24/9.14 GiB
+step   2240/12328 | loss 3.0073 | lr 2.86e-04 | grad_norm 0.54 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   2260/12328 | loss 3.0427 | lr 2.86e-04 | grad_norm 0.55 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   2280/12328 | loss 3.0209 | lr 2.85e-04 | grad_norm 0.54 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   2300/12328 | loss 3.0126 | lr 2.85e-04 | grad_norm 0.59 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   2320/12328 | loss 3.0116 | lr 2.85e-04 | grad_norm 0.54 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   2340/12328 | loss 2.9908 | lr 2.84e-04 | grad_norm 0.58 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   2360/12328 | loss 2.9972 | lr 2.84e-04 | grad_norm 0.55 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   2380/12328 | loss 3.0432 | lr 2.84e-04 | grad_norm 0.57 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   2400/12328 | loss 2.9697 | lr 2.83e-04 | grad_norm 0.56 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   2400 | 验证 loss 1.8797
+step   2400 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step   2420/12328 | loss 2.9923 | lr 2.83e-04 | grad_norm 0.59 | 59.4K tok/s | 显存 8.24/9.14 GiB
+step   2440/12328 | loss 2.9933 | lr 2.82e-04 | grad_norm 0.52 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   2460/12328 | loss 2.9690 | lr 2.82e-04 | grad_norm 0.57 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   2480/12328 | loss 2.9518 | lr 2.82e-04 | grad_norm 0.54 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   2500/12328 | loss 2.9572 | lr 2.81e-04 | grad_norm 0.53 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   2520/12328 | loss 2.9718 | lr 2.81e-04 | grad_norm 0.54 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   2540/12328 | loss 2.9736 | lr 2.81e-04 | grad_norm 0.54 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   2560/12328 | loss 2.9996 | lr 2.80e-04 | grad_norm 0.54 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   2580/12328 | loss 2.9506 | lr 2.80e-04 | grad_norm 0.54 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   2600/12328 | loss 2.9750 | lr 2.80e-04 | grad_norm 0.58 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   2600 | 验证 loss 1.8669
+step   2620/12328 | loss 2.9739 | lr 2.79e-04 | grad_norm 0.53 | 60.9K tok/s | 显存 8.24/9.14 GiB
+step   2640/12328 | loss 2.9560 | lr 2.79e-04 | grad_norm 0.54 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   2660/12328 | loss 2.9790 | lr 2.78e-04 | grad_norm 0.57 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   2680/12328 | loss 2.9333 | lr 2.78e-04 | grad_norm 0.54 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   2700/12328 | loss 2.9405 | lr 2.78e-04 | grad_norm 0.53 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   2720/12328 | loss 2.9367 | lr 2.77e-04 | grad_norm 0.54 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   2740/12328 | loss 2.9173 | lr 2.77e-04 | grad_norm 0.52 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   2760/12328 | loss 2.9477 | lr 2.76e-04 | grad_norm 0.52 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   2780/12328 | loss 2.9558 | lr 2.76e-04 | grad_norm 0.51 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   2800/12328 | loss 2.9228 | lr 2.76e-04 | grad_norm 0.53 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   2800 | 验证 loss 1.8333
+step   2800 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step   2820/12328 | loss 2.9166 | lr 2.75e-04 | grad_norm 0.57 | 59.5K tok/s | 显存 8.24/9.14 GiB
+step   2840/12328 | loss 2.9207 | lr 2.75e-04 | grad_norm 0.52 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   2860/12328 | loss 2.8977 | lr 2.74e-04 | grad_norm 0.54 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   2880/12328 | loss 2.9217 | lr 2.74e-04 | grad_norm 0.50 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   2900/12328 | loss 2.9232 | lr 2.74e-04 | grad_norm 0.53 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   2920/12328 | loss 2.9156 | lr 2.73e-04 | grad_norm 0.51 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   2940/12328 | loss 2.9042 | lr 2.73e-04 | grad_norm 0.52 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   2960/12328 | loss 2.9031 | lr 2.72e-04 | grad_norm 0.53 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   2980/12328 | loss 2.8918 | lr 2.72e-04 | grad_norm 0.54 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   3000/12328 | loss 2.8537 | lr 2.71e-04 | grad_norm 0.53 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   3000 | 验证 loss 1.8159
+step   3020/12328 | loss 2.8927 | lr 2.71e-04 | grad_norm 0.51 | 60.9K tok/s | 显存 8.24/9.14 GiB
+step   3040/12328 | loss 2.8774 | lr 2.70e-04 | grad_norm 0.52 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   3060/12328 | loss 2.8810 | lr 2.70e-04 | grad_norm 0.52 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   3080/12328 | loss 2.8831 | lr 2.70e-04 | grad_norm 0.55 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   3100/12328 | loss 2.8878 | lr 2.69e-04 | grad_norm 0.53 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   3120/12328 | loss 2.8480 | lr 2.69e-04 | grad_norm 0.52 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   3140/12328 | loss 2.8783 | lr 2.68e-04 | grad_norm 0.53 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   3160/12328 | loss 2.8226 | lr 2.68e-04 | grad_norm 0.52 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   3180/12328 | loss 2.8513 | lr 2.67e-04 | grad_norm 0.52 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   3200/12328 | loss 2.8703 | lr 2.67e-04 | grad_norm 0.55 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   3200 | 验证 loss 1.7945
+step   3200 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step   3220/12328 | loss 2.8428 | lr 2.66e-04 | grad_norm 0.51 | 59.5K tok/s | 显存 8.24/9.14 GiB
+step   3240/12328 | loss 2.8755 | lr 2.66e-04 | grad_norm 0.52 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   3260/12328 | loss 2.8400 | lr 2.65e-04 | grad_norm 0.51 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   3280/12328 | loss 2.8571 | lr 2.65e-04 | grad_norm 0.53 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   3300/12328 | loss 2.8321 | lr 2.64e-04 | grad_norm 0.49 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   3320/12328 | loss 2.8189 | lr 2.64e-04 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   3340/12328 | loss 2.8306 | lr 2.63e-04 | grad_norm 0.49 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   3360/12328 | loss 2.8730 | lr 2.63e-04 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   3380/12328 | loss 2.8118 | lr 2.62e-04 | grad_norm 0.49 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   3400/12328 | loss 2.8586 | lr 2.62e-04 | grad_norm 0.51 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   3400 | 验证 loss 1.7710
+step   3420/12328 | loss 2.8939 | lr 2.61e-04 | grad_norm 0.53 | 60.9K tok/s | 显存 8.24/9.14 GiB
+step   3440/12328 | loss 2.8610 | lr 2.61e-04 | grad_norm 0.51 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   3460/12328 | loss 2.8180 | lr 2.60e-04 | grad_norm 0.49 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   3480/12328 | loss 2.8336 | lr 2.60e-04 | grad_norm 0.54 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   3500/12328 | loss 2.8738 | lr 2.59e-04 | grad_norm 0.55 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   3520/12328 | loss 2.8150 | lr 2.59e-04 | grad_norm 0.49 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   3540/12328 | loss 2.7993 | lr 2.58e-04 | grad_norm 0.49 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   3560/12328 | loss 2.8515 | lr 2.58e-04 | grad_norm 0.49 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   3580/12328 | loss 2.8361 | lr 2.57e-04 | grad_norm 0.55 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   3600/12328 | loss 2.8215 | lr 2.57e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   3600 | 验证 loss 1.7667
+step   3600 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step   3620/12328 | loss 2.8025 | lr 2.56e-04 | grad_norm 0.51 | 59.5K tok/s | 显存 8.24/9.14 GiB
+step   3640/12328 | loss 2.8151 | lr 2.56e-04 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   3660/12328 | loss 2.8279 | lr 2.55e-04 | grad_norm 0.53 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   3680/12328 | loss 2.8004 | lr 2.55e-04 | grad_norm 0.51 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   3700/12328 | loss 2.7692 | lr 2.54e-04 | grad_norm 0.50 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   3720/12328 | loss 2.8151 | lr 2.54e-04 | grad_norm 0.52 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   3740/12328 | loss 2.8117 | lr 2.53e-04 | grad_norm 0.49 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   3760/12328 | loss 2.7621 | lr 2.53e-04 | grad_norm 0.51 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   3780/12328 | loss 2.7973 | lr 2.52e-04 | grad_norm 0.51 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   3800/12328 | loss 2.8109 | lr 2.51e-04 | grad_norm 0.50 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   3800 | 验证 loss 1.7518
+step   3820/12328 | loss 2.7812 | lr 2.51e-04 | grad_norm 0.51 | 60.9K tok/s | 显存 8.24/9.14 GiB
+step   3840/12328 | loss 2.8053 | lr 2.50e-04 | grad_norm 0.53 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   3860/12328 | loss 2.7913 | lr 2.50e-04 | grad_norm 0.49 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   3880/12328 | loss 2.7770 | lr 2.49e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   3900/12328 | loss 2.7768 | lr 2.49e-04 | grad_norm 0.48 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   3920/12328 | loss 2.7934 | lr 2.48e-04 | grad_norm 0.49 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   3940/12328 | loss 2.7599 | lr 2.47e-04 | grad_norm 0.50 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   3960/12328 | loss 2.7986 | lr 2.47e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   3980/12328 | loss 2.7669 | lr 2.46e-04 | grad_norm 0.51 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   4000/12328 | loss 2.7983 | lr 2.46e-04 | grad_norm 0.51 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   4000 | 验证 loss 1.7387
+step   4000 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step   4020/12328 | loss 2.7913 | lr 2.45e-04 | grad_norm 0.49 | 59.6K tok/s | 显存 8.24/9.14 GiB
+step   4040/12328 | loss 2.7629 | lr 2.45e-04 | grad_norm 0.54 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   4060/12328 | loss 2.7484 | lr 2.44e-04 | grad_norm 0.49 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   4080/12328 | loss 2.7569 | lr 2.43e-04 | grad_norm 0.50 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   4100/12328 | loss 2.7880 | lr 2.43e-04 | grad_norm 0.49 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   4120/12328 | loss 2.8033 | lr 2.42e-04 | grad_norm 0.54 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   4140/12328 | loss 2.7722 | lr 2.42e-04 | grad_norm 0.53 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   4160/12328 | loss 2.7867 | lr 2.41e-04 | grad_norm 0.49 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   4180/12328 | loss 2.7454 | lr 2.41e-04 | grad_norm 0.49 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   4200/12328 | loss 2.7493 | lr 2.40e-04 | grad_norm 0.47 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   4200 | 验证 loss 1.7238
+step   4220/12328 | loss 2.7678 | lr 2.39e-04 | grad_norm 0.48 | 60.9K tok/s | 显存 8.24/9.14 GiB
+step   4240/12328 | loss 2.7755 | lr 2.39e-04 | grad_norm 0.47 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   4260/12328 | loss 2.7690 | lr 2.38e-04 | grad_norm 0.48 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   4280/12328 | loss 2.7632 | lr 2.38e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   4300/12328 | loss 2.7474 | lr 2.37e-04 | grad_norm 0.48 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   4320/12328 | loss 2.7548 | lr 2.36e-04 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   4340/12328 | loss 2.7244 | lr 2.36e-04 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   4360/12328 | loss 2.7661 | lr 2.35e-04 | grad_norm 0.47 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   4380/12328 | loss 2.7518 | lr 2.34e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   4400/12328 | loss 2.7596 | lr 2.34e-04 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   4400 | 验证 loss 1.6963
+step   4400 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step   4420/12328 | loss 2.7485 | lr 2.33e-04 | grad_norm 0.52 | 59.6K tok/s | 显存 8.24/9.14 GiB
+step   4440/12328 | loss 2.7431 | lr 2.33e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   4460/12328 | loss 2.7537 | lr 2.32e-04 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   4480/12328 | loss 2.7578 | lr 2.31e-04 | grad_norm 0.55 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   4500/12328 | loss 2.7188 | lr 2.31e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   4520/12328 | loss 2.7137 | lr 2.30e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   4540/12328 | loss 2.7430 | lr 2.29e-04 | grad_norm 0.49 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   4560/12328 | loss 2.7165 | lr 2.29e-04 | grad_norm 0.47 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   4580/12328 | loss 2.7248 | lr 2.28e-04 | grad_norm 0.47 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   4600/12328 | loss 2.7280 | lr 2.28e-04 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   4600 | 验证 loss 1.6788
+step   4620/12328 | loss 2.7322 | lr 2.27e-04 | grad_norm 0.48 | 61.0K tok/s | 显存 8.24/9.14 GiB
+step   4640/12328 | loss 2.7159 | lr 2.26e-04 | grad_norm 0.47 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   4660/12328 | loss 2.7438 | lr 2.26e-04 | grad_norm 0.49 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   4680/12328 | loss 2.7407 | lr 2.25e-04 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   4700/12328 | loss 2.7574 | lr 2.24e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   4720/12328 | loss 2.7142 | lr 2.24e-04 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   4740/12328 | loss 2.7252 | lr 2.23e-04 | grad_norm 0.48 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   4760/12328 | loss 2.7601 | lr 2.22e-04 | grad_norm 0.51 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   4780/12328 | loss 2.7242 | lr 2.22e-04 | grad_norm 0.48 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   4800/12328 | loss 2.7528 | lr 2.21e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   4800 | 验证 loss 1.6731
+step   4800 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step   4820/12328 | loss 2.7311 | lr 2.20e-04 | grad_norm 0.48 | 59.6K tok/s | 显存 8.24/9.14 GiB
+step   4840/12328 | loss 2.7243 | lr 2.20e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   4860/12328 | loss 2.7036 | lr 2.19e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   4880/12328 | loss 2.7249 | lr 2.19e-04 | grad_norm 0.51 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   4900/12328 | loss 2.7129 | lr 2.18e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   4920/12328 | loss 2.6931 | lr 2.17e-04 | grad_norm 0.49 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   4940/12328 | loss 2.7018 | lr 2.17e-04 | grad_norm 0.49 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   4960/12328 | loss 2.7318 | lr 2.16e-04 | grad_norm 0.49 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   4980/12328 | loss 2.7089 | lr 2.15e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5000/12328 | loss 2.7139 | lr 2.15e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5000 | 验证 loss 1.6588
+step   5020/12328 | loss 2.6972 | lr 2.14e-04 | grad_norm 0.47 | 61.0K tok/s | 显存 8.24/9.14 GiB
+step   5040/12328 | loss 2.6934 | lr 2.13e-04 | grad_norm 0.50 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   5060/12328 | loss 2.7199 | lr 2.13e-04 | grad_norm 0.47 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5080/12328 | loss 2.7085 | lr 2.12e-04 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5100/12328 | loss 2.7117 | lr 2.11e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5120/12328 | loss 2.6919 | lr 2.11e-04 | grad_norm 0.55 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   5140/12328 | loss 2.7069 | lr 2.10e-04 | grad_norm 0.47 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5160/12328 | loss 2.7016 | lr 2.09e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5180/12328 | loss 2.7053 | lr 2.08e-04 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5200/12328 | loss 2.6584 | lr 2.08e-04 | grad_norm 0.50 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   5200 | 验证 loss 1.6384
+step   5200 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step   5220/12328 | loss 2.7004 | lr 2.07e-04 | grad_norm 0.47 | 59.6K tok/s | 显存 8.24/9.14 GiB
+step   5240/12328 | loss 2.6735 | lr 2.06e-04 | grad_norm 0.47 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   5260/12328 | loss 2.6662 | lr 2.06e-04 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5280/12328 | loss 2.6585 | lr 2.05e-04 | grad_norm 0.48 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   5300/12328 | loss 2.6790 | lr 2.04e-04 | grad_norm 0.46 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5320/12328 | loss 2.7106 | lr 2.04e-04 | grad_norm 0.51 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   5340/12328 | loss 2.6566 | lr 2.03e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5360/12328 | loss 2.6646 | lr 2.02e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5380/12328 | loss 2.7075 | lr 2.02e-04 | grad_norm 0.49 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   5400/12328 | loss 2.6800 | lr 2.01e-04 | grad_norm 0.49 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   5400 | 验证 loss 1.6425
+step   5420/12328 | loss 2.6553 | lr 2.00e-04 | grad_norm 0.49 | 61.0K tok/s | 显存 8.24/9.14 GiB
+step   5440/12328 | loss 2.6680 | lr 2.00e-04 | grad_norm 0.47 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5460/12328 | loss 2.6634 | lr 1.99e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5480/12328 | loss 2.6837 | lr 1.98e-04 | grad_norm 0.48 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   5500/12328 | loss 2.6653 | lr 1.97e-04 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5520/12328 | loss 2.6390 | lr 1.97e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5540/12328 | loss 2.6351 | lr 1.96e-04 | grad_norm 0.52 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5560/12328 | loss 2.6670 | lr 1.95e-04 | grad_norm 0.48 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   5580/12328 | loss 2.6706 | lr 1.95e-04 | grad_norm 0.47 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   5600/12328 | loss 2.6742 | lr 1.94e-04 | grad_norm 0.57 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   5600 | 验证 loss 1.6415
+step   5600 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step   5620/12328 | loss 2.6606 | lr 1.93e-04 | grad_norm 0.49 | 59.5K tok/s | 显存 8.24/9.14 GiB
+step   5640/12328 | loss 2.6342 | lr 1.93e-04 | grad_norm 0.49 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   5660/12328 | loss 2.6673 | lr 1.92e-04 | grad_norm 0.48 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   5680/12328 | loss 2.6445 | lr 1.91e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5700/12328 | loss 2.6138 | lr 1.90e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5720/12328 | loss 2.6654 | lr 1.90e-04 | grad_norm 0.48 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   5740/12328 | loss 2.6405 | lr 1.89e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5760/12328 | loss 2.6448 | lr 1.88e-04 | grad_norm 0.47 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5780/12328 | loss 2.6625 | lr 1.88e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5800/12328 | loss 2.6335 | lr 1.87e-04 | grad_norm 0.49 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   5800 | 验证 loss 1.6254
+step   5820/12328 | loss 2.6663 | lr 1.86e-04 | grad_norm 0.49 | 61.0K tok/s | 显存 8.24/9.14 GiB
+step   5840/12328 | loss 2.6771 | lr 1.86e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5860/12328 | loss 2.6722 | lr 1.85e-04 | grad_norm 0.49 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   5880/12328 | loss 2.6492 | lr 1.84e-04 | grad_norm 0.47 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   5900/12328 | loss 2.6720 | lr 1.83e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5920/12328 | loss 2.6480 | lr 1.83e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5940/12328 | loss 2.6291 | lr 1.82e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   5960/12328 | loss 2.6601 | lr 1.81e-04 | grad_norm 0.47 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   5980/12328 | loss 2.6411 | lr 1.81e-04 | grad_norm 0.47 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   6000/12328 | loss 2.6608 | lr 1.80e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   6000 | 验证 loss 1.6220
+step   6000 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step   6020/12328 | loss 2.6427 | lr 1.79e-04 | grad_norm 0.48 | 59.5K tok/s | 显存 8.24/9.14 GiB
+step   6040/12328 | loss 2.6540 | lr 1.78e-04 | grad_norm 0.47 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   6060/12328 | loss 2.6032 | lr 1.78e-04 | grad_norm 0.52 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   6080/12328 | loss 2.6757 | lr 1.77e-04 | grad_norm 0.48 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   6100/12328 | loss 2.5897 | lr 1.76e-04 | grad_norm 0.47 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   6120/12328 | loss 2.6186 | lr 1.76e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   6140/12328 | loss 2.6386 | lr 1.75e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   6160/12328 | loss 2.6355 | lr 1.74e-04 | grad_norm 0.48 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   6180/12328 | loss 2.6356 | lr 1.73e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   6200/12328 | loss 2.6495 | lr 1.73e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   6200 | 验证 loss 1.5992
+step   6220/12328 | loss 2.6374 | lr 1.72e-04 | grad_norm 0.50 | 61.0K tok/s | 显存 8.24/9.14 GiB
+step   6240/12328 | loss 2.6360 | lr 1.71e-04 | grad_norm 0.48 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   6260/12328 | loss 2.6313 | lr 1.71e-04 | grad_norm 0.48 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   6280/12328 | loss 2.6420 | lr 1.70e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   6300/12328 | loss 2.6151 | lr 1.69e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   6320/12328 | loss 2.6116 | lr 1.68e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   6340/12328 | loss 2.6004 | lr 1.68e-04 | grad_norm 0.47 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   6360/12328 | loss 2.6314 | lr 1.67e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   6380/12328 | loss 2.6271 | lr 1.66e-04 | grad_norm 0.50 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   6400/12328 | loss 2.6649 | lr 1.66e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   6400 | 验证 loss 1.5915
+step   6400 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step   6420/12328 | loss 2.6261 | lr 1.65e-04 | grad_norm 0.51 | 59.6K tok/s | 显存 8.24/9.14 GiB
+step   6440/12328 | loss 2.6210 | lr 1.64e-04 | grad_norm 0.48 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   6460/12328 | loss 2.6384 | lr 1.63e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   6480/12328 | loss 2.6118 | lr 1.63e-04 | grad_norm 0.48 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   6500/12328 | loss 2.6072 | lr 1.62e-04 | grad_norm 0.47 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   6520/12328 | loss 2.6142 | lr 1.61e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   6540/12328 | loss 2.6696 | lr 1.61e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   6560/12328 | loss 2.6146 | lr 1.60e-04 | grad_norm 0.49 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   6580/12328 | loss 2.5963 | lr 1.59e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   6600/12328 | loss 2.6287 | lr 1.58e-04 | grad_norm 0.48 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   6600 | 验证 loss 1.5916
+step   6620/12328 | loss 2.6250 | lr 1.58e-04 | grad_norm 0.48 | 61.0K tok/s | 显存 8.24/9.14 GiB
+step   6640/12328 | loss 2.6174 | lr 1.57e-04 | grad_norm 0.49 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   6660/12328 | loss 2.6022 | lr 1.56e-04 | grad_norm 0.50 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   6680/12328 | loss 2.6045 | lr 1.56e-04 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   6700/12328 | loss 2.6030 | lr 1.55e-04 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   6720/12328 | loss 2.5680 | lr 1.54e-04 | grad_norm 0.47 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   6740/12328 | loss 2.5648 | lr 1.53e-04 | grad_norm 0.47 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   6760/12328 | loss 2.5756 | lr 1.53e-04 | grad_norm 0.49 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   6780/12328 | loss 2.6096 | lr 1.52e-04 | grad_norm 0.49 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   6800/12328 | loss 2.5900 | lr 1.51e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   6800 | 验证 loss 1.5721
+step   6800 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step   6820/12328 | loss 2.6023 | lr 1.51e-04 | grad_norm 0.46 | 59.5K tok/s | 显存 8.24/9.14 GiB
+step   6840/12328 | loss 2.5763 | lr 1.50e-04 | grad_norm 0.47 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   6860/12328 | loss 2.6304 | lr 1.49e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   6880/12328 | loss 2.5923 | lr 1.48e-04 | grad_norm 0.49 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   6900/12328 | loss 2.5373 | lr 1.48e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   6920/12328 | loss 2.6126 | lr 1.47e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   6940/12328 | loss 2.5685 | lr 1.46e-04 | grad_norm 0.48 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   6960/12328 | loss 2.6158 | lr 1.46e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   6980/12328 | loss 2.5648 | lr 1.45e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   7000/12328 | loss 2.5768 | lr 1.44e-04 | grad_norm 0.47 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   7000 | 验证 loss 1.5600
+step   7020/12328 | loss 2.5788 | lr 1.43e-04 | grad_norm 0.48 | 61.2K tok/s | 显存 8.24/9.14 GiB
+step   7040/12328 | loss 2.6291 | lr 1.43e-04 | grad_norm 0.49 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   7060/12328 | loss 2.6018 | lr 1.42e-04 | grad_norm 0.50 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   7080/12328 | loss 2.5830 | lr 1.41e-04 | grad_norm 0.49 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   7100/12328 | loss 2.5989 | lr 1.41e-04 | grad_norm 0.47 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   7120/12328 | loss 2.5671 | lr 1.40e-04 | grad_norm 0.48 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   7140/12328 | loss 2.5734 | lr 1.39e-04 | grad_norm 0.48 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   7160/12328 | loss 2.5916 | lr 1.38e-04 | grad_norm 0.48 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   7180/12328 | loss 2.5987 | lr 1.38e-04 | grad_norm 0.48 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   7200/12328 | loss 2.5441 | lr 1.37e-04 | grad_norm 0.51 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   7200 | 验证 loss 1.5572
+step   7200 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step   7220/12328 | loss 2.5795 | lr 1.36e-04 | grad_norm 0.47 | 59.4K tok/s | 显存 8.24/9.14 GiB
+step   7240/12328 | loss 2.5808 | lr 1.36e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   7260/12328 | loss 2.5747 | lr 1.35e-04 | grad_norm 0.47 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   7280/12328 | loss 2.5912 | lr 1.34e-04 | grad_norm 0.49 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   7300/12328 | loss 2.5636 | lr 1.34e-04 | grad_norm 0.49 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   7320/12328 | loss 2.5919 | lr 1.33e-04 | grad_norm 0.49 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   7340/12328 | loss 2.5734 | lr 1.32e-04 | grad_norm 0.49 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   7360/12328 | loss 2.5561 | lr 1.31e-04 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   7380/12328 | loss 2.5553 | lr 1.31e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   7400/12328 | loss 2.5961 | lr 1.30e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   7400 | 验证 loss 1.5516
+step   7420/12328 | loss 2.5858 | lr 1.29e-04 | grad_norm 0.48 | 61.1K tok/s | 显存 8.24/9.14 GiB
+step   7440/12328 | loss 2.5600 | lr 1.29e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   7460/12328 | loss 2.5596 | lr 1.28e-04 | grad_norm 0.47 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   7480/12328 | loss 2.5591 | lr 1.27e-04 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   7500/12328 | loss 2.5596 | lr 1.27e-04 | grad_norm 0.50 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   7520/12328 | loss 2.5511 | lr 1.26e-04 | grad_norm 0.47 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   7540/12328 | loss 2.5745 | lr 1.25e-04 | grad_norm 0.48 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   7560/12328 | loss 2.5809 | lr 1.25e-04 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   7580/12328 | loss 2.6003 | lr 1.24e-04 | grad_norm 0.49 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   7600/12328 | loss 2.5547 | lr 1.23e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   7600 | 验证 loss 1.5469
+step   7600 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step   7620/12328 | loss 2.5674 | lr 1.23e-04 | grad_norm 0.51 | 59.6K tok/s | 显存 8.24/9.14 GiB
+step   7640/12328 | loss 2.5719 | lr 1.22e-04 | grad_norm 0.47 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   7660/12328 | loss 2.5408 | lr 1.21e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   7680/12328 | loss 2.5406 | lr 1.20e-04 | grad_norm 0.49 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   7700/12328 | loss 2.5972 | lr 1.20e-04 | grad_norm 0.49 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   7720/12328 | loss 2.5647 | lr 1.19e-04 | grad_norm 0.48 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   7740/12328 | loss 2.5588 | lr 1.18e-04 | grad_norm 0.50 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   7760/12328 | loss 2.5546 | lr 1.18e-04 | grad_norm 0.47 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   7780/12328 | loss 2.5491 | lr 1.17e-04 | grad_norm 0.48 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   7800/12328 | loss 2.5745 | lr 1.16e-04 | grad_norm 0.48 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   7800 | 验证 loss 1.5481
+step   7820/12328 | loss 2.5308 | lr 1.16e-04 | grad_norm 0.48 | 61.0K tok/s | 显存 8.24/9.14 GiB
+step   7840/12328 | loss 2.5558 | lr 1.15e-04 | grad_norm 0.48 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   7860/12328 | loss 2.5610 | lr 1.14e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   7880/12328 | loss 2.5620 | lr 1.14e-04 | grad_norm 0.50 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   7900/12328 | loss 2.5411 | lr 1.13e-04 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   7920/12328 | loss 2.5819 | lr 1.12e-04 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   7940/12328 | loss 2.5440 | lr 1.12e-04 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   7960/12328 | loss 2.5412 | lr 1.11e-04 | grad_norm 0.52 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   7980/12328 | loss 2.5495 | lr 1.10e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   8000/12328 | loss 2.4976 | lr 1.10e-04 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   8000 | 验证 loss 1.5299
+step   8000 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step   8020/12328 | loss 2.5419 | lr 1.09e-04 | grad_norm 0.49 | 59.7K tok/s | 显存 8.24/9.14 GiB
+step   8040/12328 | loss 2.5228 | lr 1.09e-04 | grad_norm 0.49 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   8060/12328 | loss 2.5428 | lr 1.08e-04 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   8080/12328 | loss 2.5638 | lr 1.07e-04 | grad_norm 0.49 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   8100/12328 | loss 2.5417 | lr 1.07e-04 | grad_norm 0.49 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   8120/12328 | loss 2.5533 | lr 1.06e-04 | grad_norm 0.48 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   8140/12328 | loss 2.5493 | lr 1.05e-04 | grad_norm 0.49 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   8160/12328 | loss 2.5306 | lr 1.05e-04 | grad_norm 0.49 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   8180/12328 | loss 2.5309 | lr 1.04e-04 | grad_norm 0.49 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   8200/12328 | loss 2.5285 | lr 1.03e-04 | grad_norm 0.47 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   8200 | 验证 loss 1.5348
+step   8220/12328 | loss 2.5213 | lr 1.03e-04 | grad_norm 0.50 | 61.0K tok/s | 显存 8.24/9.14 GiB
+step   8240/12328 | loss 2.5538 | lr 1.02e-04 | grad_norm 0.49 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   8260/12328 | loss 2.5173 | lr 1.01e-04 | grad_norm 0.48 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   8280/12328 | loss 2.5472 | lr 1.01e-04 | grad_norm 0.48 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   8300/12328 | loss 2.5468 | lr 1.00e-04 | grad_norm 0.50 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   8320/12328 | loss 2.5096 | lr 9.96e-05 | grad_norm 0.48 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   8340/12328 | loss 2.5050 | lr 9.89e-05 | grad_norm 0.52 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   8360/12328 | loss 2.5054 | lr 9.83e-05 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   8380/12328 | loss 2.5096 | lr 9.77e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   8400/12328 | loss 2.5196 | lr 9.71e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   8400 | 验证 loss 1.5087
+step   8400 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step   8420/12328 | loss 2.5370 | lr 9.65e-05 | grad_norm 0.49 | 60.2K tok/s | 显存 8.24/9.14 GiB
+step   8440/12328 | loss 2.5548 | lr 9.58e-05 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   8460/12328 | loss 2.5304 | lr 9.52e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   8480/12328 | loss 2.5623 | lr 9.46e-05 | grad_norm 0.50 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   8500/12328 | loss 2.5043 | lr 9.40e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   8520/12328 | loss 2.5349 | lr 9.34e-05 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   8540/12328 | loss 2.5343 | lr 9.28e-05 | grad_norm 0.47 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   8560/12328 | loss 2.5438 | lr 9.22e-05 | grad_norm 0.49 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   8580/12328 | loss 2.5229 | lr 9.16e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   8600/12328 | loss 2.5217 | lr 9.10e-05 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   8600 | 验证 loss 1.5071
+step   8620/12328 | loss 2.5622 | lr 9.04e-05 | grad_norm 0.50 | 61.0K tok/s | 显存 8.24/9.14 GiB
+step   8640/12328 | loss 2.5190 | lr 8.98e-05 | grad_norm 0.48 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   8660/12328 | loss 2.5600 | lr 8.92e-05 | grad_norm 0.50 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   8680/12328 | loss 2.5196 | lr 8.86e-05 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   8700/12328 | loss 2.5138 | lr 8.80e-05 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   8720/12328 | loss 2.5006 | lr 8.74e-05 | grad_norm 0.49 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   8740/12328 | loss 2.4867 | lr 8.68e-05 | grad_norm 0.49 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   8760/12328 | loss 2.5293 | lr 8.62e-05 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   8780/12328 | loss 2.5548 | lr 8.57e-05 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   8800/12328 | loss 2.5290 | lr 8.51e-05 | grad_norm 0.51 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   8800 | 验证 loss 1.4984
+step   8800 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step   8820/12328 | loss 2.5127 | lr 8.45e-05 | grad_norm 0.49 | 59.9K tok/s | 显存 8.24/9.14 GiB
+step   8840/12328 | loss 2.5343 | lr 8.39e-05 | grad_norm 0.48 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   8860/12328 | loss 2.5237 | lr 8.34e-05 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   8880/12328 | loss 2.5430 | lr 8.28e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   8900/12328 | loss 2.5407 | lr 8.22e-05 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   8920/12328 | loss 2.5279 | lr 8.17e-05 | grad_norm 0.50 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   8940/12328 | loss 2.5046 | lr 8.11e-05 | grad_norm 0.48 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   8960/12328 | loss 2.4762 | lr 8.05e-05 | grad_norm 0.49 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   8980/12328 | loss 2.4848 | lr 8.00e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   9000/12328 | loss 2.4812 | lr 7.94e-05 | grad_norm 0.50 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   9000 | 验证 loss 1.5064
+step   9020/12328 | loss 2.5274 | lr 7.89e-05 | grad_norm 0.49 | 61.0K tok/s | 显存 8.24/9.14 GiB
+step   9040/12328 | loss 2.5170 | lr 7.83e-05 | grad_norm 0.50 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   9060/12328 | loss 2.5382 | lr 7.78e-05 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   9080/12328 | loss 2.5443 | lr 7.72e-05 | grad_norm 0.49 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   9100/12328 | loss 2.5172 | lr 7.67e-05 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   9120/12328 | loss 2.5277 | lr 7.61e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   9140/12328 | loss 2.5094 | lr 7.56e-05 | grad_norm 0.54 | 65.4K tok/s | 显存 8.24/9.14 GiB
+step   9160/12328 | loss 2.4944 | lr 7.51e-05 | grad_norm 0.50 | 65.5K tok/s | 显存 8.24/9.14 GiB
+step   9180/12328 | loss 2.5337 | lr 7.45e-05 | grad_norm 0.50 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   9200/12328 | loss 2.5017 | lr 7.40e-05 | grad_norm 0.48 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   9200 | 验证 loss 1.4966
+step   9200 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step   9220/12328 | loss 2.5257 | lr 7.35e-05 | grad_norm 0.50 | 59.1K tok/s | 显存 8.24/9.14 GiB
+step   9240/12328 | loss 2.5252 | lr 7.29e-05 | grad_norm 0.49 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   9260/12328 | loss 2.5234 | lr 7.24e-05 | grad_norm 0.50 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   9280/12328 | loss 2.5258 | lr 7.19e-05 | grad_norm 0.49 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   9300/12328 | loss 2.5144 | lr 7.14e-05 | grad_norm 0.49 | 65.3K tok/s | 显存 8.24/9.14 GiB
+step   9320/12328 | loss 2.5216 | lr 7.09e-05 | grad_norm 0.49 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step   9340/12328 | loss 2.5258 | lr 7.04e-05 | grad_norm 0.50 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   9360/12328 | loss 2.5007 | lr 6.98e-05 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   9380/12328 | loss 2.5245 | lr 6.93e-05 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   9400/12328 | loss 2.5013 | lr 6.88e-05 | grad_norm 0.49 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   9400 | 验证 loss 1.4893
+step   9420/12328 | loss 2.5262 | lr 6.83e-05 | grad_norm 0.50 | 61.0K tok/s | 显存 8.24/9.14 GiB
+step   9440/12328 | loss 2.5114 | lr 6.78e-05 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   9460/12328 | loss 2.4930 | lr 6.73e-05 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   9480/12328 | loss 2.4726 | lr 6.68e-05 | grad_norm 0.51 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   9500/12328 | loss 2.5113 | lr 6.64e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   9520/12328 | loss 2.5188 | lr 6.59e-05 | grad_norm 0.49 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   9540/12328 | loss 2.5365 | lr 6.54e-05 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   9560/12328 | loss 2.4809 | lr 6.49e-05 | grad_norm 0.49 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   9580/12328 | loss 2.4843 | lr 6.44e-05 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   9600/12328 | loss 2.4957 | lr 6.39e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   9600 | 验证 loss 1.4782
+step   9600 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step   9620/12328 | loss 2.4771 | lr 6.35e-05 | grad_norm 0.51 | 59.6K tok/s | 显存 8.24/9.14 GiB
+step   9640/12328 | loss 2.5034 | lr 6.30e-05 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   9660/12328 | loss 2.4908 | lr 6.25e-05 | grad_norm 0.51 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   9680/12328 | loss 2.4799 | lr 6.21e-05 | grad_norm 0.50 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   9700/12328 | loss 2.5084 | lr 6.16e-05 | grad_norm 0.48 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step   9720/12328 | loss 2.4978 | lr 6.11e-05 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   9740/12328 | loss 2.4883 | lr 6.07e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   9760/12328 | loss 2.4819 | lr 6.02e-05 | grad_norm 0.50 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step   9780/12328 | loss 2.5058 | lr 5.98e-05 | grad_norm 0.48 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   9800/12328 | loss 2.5084 | lr 5.93e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   9800 | 验证 loss 1.4657
+step   9820/12328 | loss 2.5223 | lr 5.89e-05 | grad_norm 0.51 | 61.0K tok/s | 显存 8.24/9.14 GiB
+step   9840/12328 | loss 2.5128 | lr 5.84e-05 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   9860/12328 | loss 2.4918 | lr 5.80e-05 | grad_norm 0.53 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   9880/12328 | loss 2.5038 | lr 5.76e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   9900/12328 | loss 2.5016 | lr 5.71e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   9920/12328 | loss 2.4574 | lr 5.67e-05 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   9940/12328 | loss 2.4595 | lr 5.63e-05 | grad_norm 0.51 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step   9960/12328 | loss 2.4813 | lr 5.59e-05 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step   9980/12328 | loss 2.4889 | lr 5.54e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  10000/12328 | loss 2.4839 | lr 5.50e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  10000 | 验证 loss 1.4906
+step  10000 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step  10020/12328 | loss 2.5079 | lr 5.46e-05 | grad_norm 0.52 | 59.6K tok/s | 显存 8.24/9.14 GiB
+step  10040/12328 | loss 2.4973 | lr 5.42e-05 | grad_norm 0.50 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  10060/12328 | loss 2.5122 | lr 5.38e-05 | grad_norm 0.49 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step  10080/12328 | loss 2.5108 | lr 5.34e-05 | grad_norm 0.49 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  10100/12328 | loss 2.4989 | lr 5.30e-05 | grad_norm 0.50 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step  10120/12328 | loss 2.5011 | lr 5.26e-05 | grad_norm 0.48 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  10140/12328 | loss 2.4951 | lr 5.22e-05 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  10160/12328 | loss 2.4607 | lr 5.18e-05 | grad_norm 0.50 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step  10180/12328 | loss 2.4916 | lr 5.14e-05 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  10200/12328 | loss 2.4782 | lr 5.10e-05 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  10200 | 验证 loss 1.4577
+step  10220/12328 | loss 2.4926 | lr 5.06e-05 | grad_norm 0.50 | 61.0K tok/s | 显存 8.24/9.14 GiB
+step  10240/12328 | loss 2.4695 | lr 5.03e-05 | grad_norm 0.50 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  10260/12328 | loss 2.5017 | lr 4.99e-05 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  10280/12328 | loss 2.4902 | lr 4.95e-05 | grad_norm 0.48 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step  10300/12328 | loss 2.4642 | lr 4.91e-05 | grad_norm 0.51 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step  10320/12328 | loss 2.4960 | lr 4.88e-05 | grad_norm 0.52 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  10340/12328 | loss 2.4562 | lr 4.84e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  10360/12328 | loss 2.4746 | lr 4.80e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  10380/12328 | loss 2.4663 | lr 4.77e-05 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  10400/12328 | loss 2.4758 | lr 4.73e-05 | grad_norm 0.51 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step  10400 | 验证 loss 1.4633
+step  10400 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step  10420/12328 | loss 2.5060 | lr 4.70e-05 | grad_norm 0.56 | 59.7K tok/s | 显存 8.24/9.14 GiB
+step  10440/12328 | loss 2.4743 | lr 4.66e-05 | grad_norm 0.51 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  10460/12328 | loss 2.4840 | lr 4.63e-05 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  10480/12328 | loss 2.4797 | lr 4.60e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  10500/12328 | loss 2.4998 | lr 4.56e-05 | grad_norm 0.51 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step  10520/12328 | loss 2.4662 | lr 4.53e-05 | grad_norm 0.49 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  10540/12328 | loss 2.4885 | lr 4.50e-05 | grad_norm 0.49 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step  10560/12328 | loss 2.4910 | lr 4.46e-05 | grad_norm 0.52 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step  10580/12328 | loss 2.5122 | lr 4.43e-05 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  10600/12328 | loss 2.4503 | lr 4.40e-05 | grad_norm 0.50 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  10600 | 验证 loss 1.4526
+step  10620/12328 | loss 2.4776 | lr 4.37e-05 | grad_norm 0.49 | 61.0K tok/s | 显存 8.24/9.14 GiB
+step  10640/12328 | loss 2.4548 | lr 4.34e-05 | grad_norm 0.51 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  10660/12328 | loss 2.4491 | lr 4.30e-05 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  10680/12328 | loss 2.4406 | lr 4.27e-05 | grad_norm 0.50 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step  10700/12328 | loss 2.4789 | lr 4.24e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  10720/12328 | loss 2.4708 | lr 4.21e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  10740/12328 | loss 2.4339 | lr 4.18e-05 | grad_norm 0.51 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step  10760/12328 | loss 2.4844 | lr 4.16e-05 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  10780/12328 | loss 2.4770 | lr 4.13e-05 | grad_norm 0.50 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  10800/12328 | loss 2.4641 | lr 4.10e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  10800 | 验证 loss 1.4403
+step  10800 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step  10820/12328 | loss 2.4971 | lr 4.07e-05 | grad_norm 0.51 | 59.5K tok/s | 显存 8.24/9.14 GiB
+step  10840/12328 | loss 2.5036 | lr 4.04e-05 | grad_norm 0.49 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  10860/12328 | loss 2.4623 | lr 4.01e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  10880/12328 | loss 2.4640 | lr 3.99e-05 | grad_norm 0.50 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  10900/12328 | loss 2.5053 | lr 3.96e-05 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  10920/12328 | loss 2.4697 | lr 3.93e-05 | grad_norm 0.50 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  10940/12328 | loss 2.5043 | lr 3.91e-05 | grad_norm 0.50 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step  10960/12328 | loss 2.4856 | lr 3.88e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  10980/12328 | loss 2.4706 | lr 3.86e-05 | grad_norm 0.52 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  11000/12328 | loss 2.4651 | lr 3.83e-05 | grad_norm 0.51 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  11000 | 验证 loss 1.4529
+step  11020/12328 | loss 2.4735 | lr 3.81e-05 | grad_norm 0.50 | 61.0K tok/s | 显存 8.24/9.14 GiB
+step  11040/12328 | loss 2.4388 | lr 3.78e-05 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  11060/12328 | loss 2.4682 | lr 3.76e-05 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  11080/12328 | loss 2.4840 | lr 3.74e-05 | grad_norm 0.54 | 66.1K tok/s | 显存 8.24/9.14 GiB
+step  11100/12328 | loss 2.4725 | lr 3.71e-05 | grad_norm 0.52 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  11120/12328 | loss 2.5021 | lr 3.69e-05 | grad_norm 0.51 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step  11140/12328 | loss 2.4682 | lr 3.67e-05 | grad_norm 0.52 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step  11160/12328 | loss 2.4840 | lr 3.65e-05 | grad_norm 0.58 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  11180/12328 | loss 2.4351 | lr 3.62e-05 | grad_norm 0.52 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  11200/12328 | loss 2.4732 | lr 3.60e-05 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  11200 | 验证 loss 1.4577
+step  11200 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step  11220/12328 | loss 2.4693 | lr 3.58e-05 | grad_norm 0.52 | 59.6K tok/s | 显存 8.24/9.14 GiB
+step  11240/12328 | loss 2.4261 | lr 3.56e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  11260/12328 | loss 2.4473 | lr 3.54e-05 | grad_norm 0.49 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step  11280/12328 | loss 2.4479 | lr 3.52e-05 | grad_norm 0.51 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  11300/12328 | loss 2.4755 | lr 3.50e-05 | grad_norm 0.49 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step  11320/12328 | loss 2.4579 | lr 3.48e-05 | grad_norm 0.53 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step  11340/12328 | loss 2.4688 | lr 3.46e-05 | grad_norm 0.49 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step  11360/12328 | loss 2.4469 | lr 3.44e-05 | grad_norm 0.52 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  11380/12328 | loss 2.4600 | lr 3.43e-05 | grad_norm 0.49 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step  11400/12328 | loss 2.4599 | lr 3.41e-05 | grad_norm 0.52 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  11400 | 验证 loss 1.4346
+step  11420/12328 | loss 2.4485 | lr 3.39e-05 | grad_norm 0.51 | 61.0K tok/s | 显存 8.24/9.14 GiB
+step  11440/12328 | loss 2.4195 | lr 3.37e-05 | grad_norm 0.51 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  11460/12328 | loss 2.4529 | lr 3.36e-05 | grad_norm 0.50 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  11480/12328 | loss 2.4928 | lr 3.34e-05 | grad_norm 0.50 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step  11500/12328 | loss 2.4844 | lr 3.33e-05 | grad_norm 0.54 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  11520/12328 | loss 2.4307 | lr 3.31e-05 | grad_norm 0.52 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  11540/12328 | loss 2.4502 | lr 3.30e-05 | grad_norm 0.51 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  11560/12328 | loss 2.4657 | lr 3.28e-05 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  11580/12328 | loss 2.4742 | lr 3.27e-05 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  11600/12328 | loss 2.4419 | lr 3.25e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  11600 | 验证 loss 1.4511
+step  11600 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step  11620/12328 | loss 2.4630 | lr 3.24e-05 | grad_norm 0.51 | 59.6K tok/s | 显存 8.24/9.14 GiB
+step  11640/12328 | loss 2.4449 | lr 3.23e-05 | grad_norm 0.50 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step  11660/12328 | loss 2.4910 | lr 3.21e-05 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  11680/12328 | loss 2.4791 | lr 3.20e-05 | grad_norm 0.51 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  11700/12328 | loss 2.4403 | lr 3.19e-05 | grad_norm 0.52 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  11720/12328 | loss 2.4399 | lr 3.18e-05 | grad_norm 0.51 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  11740/12328 | loss 2.4607 | lr 3.16e-05 | grad_norm 0.49 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  11760/12328 | loss 2.4812 | lr 3.15e-05 | grad_norm 0.50 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  11780/12328 | loss 2.4763 | lr 3.14e-05 | grad_norm 0.54 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  11800/12328 | loss 2.4360 | lr 3.13e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  11800 | 验证 loss 1.4392
+step  11820/12328 | loss 2.4363 | lr 3.12e-05 | grad_norm 0.51 | 61.0K tok/s | 显存 8.24/9.14 GiB
+step  11840/12328 | loss 2.4318 | lr 3.11e-05 | grad_norm 0.51 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  11860/12328 | loss 2.4806 | lr 3.10e-05 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  11880/12328 | loss 2.4650 | lr 3.10e-05 | grad_norm 0.52 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  11900/12328 | loss 2.4548 | lr 3.09e-05 | grad_norm 0.52 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  11920/12328 | loss 2.4675 | lr 3.08e-05 | grad_norm 0.52 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  11940/12328 | loss 2.4278 | lr 3.07e-05 | grad_norm 0.50 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  11960/12328 | loss 2.4675 | lr 3.06e-05 | grad_norm 0.52 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  11980/12328 | loss 2.4652 | lr 3.06e-05 | grad_norm 0.51 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step  12000/12328 | loss 2.4580 | lr 3.05e-05 | grad_norm 0.51 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  12000 | 验证 loss 1.4434
+step  12000 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+step  12020/12328 | loss 2.4682 | lr 3.05e-05 | grad_norm 0.51 | 60.2K tok/s | 显存 8.24/9.14 GiB
+step  12040/12328 | loss 2.4846 | lr 3.04e-05 | grad_norm 0.52 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  12060/12328 | loss 2.4134 | lr 3.03e-05 | grad_norm 0.51 | 65.7K tok/s | 显存 8.24/9.14 GiB
+step  12080/12328 | loss 2.4597 | lr 3.03e-05 | grad_norm 0.52 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step  12100/12328 | loss 2.4652 | lr 3.02e-05 | grad_norm 0.52 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  12120/12328 | loss 2.4597 | lr 3.02e-05 | grad_norm 0.52 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  12140/12328 | loss 2.3960 | lr 3.02e-05 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  12160/12328 | loss 2.4485 | lr 3.01e-05 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  12180/12328 | loss 2.4408 | lr 3.01e-05 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  12200/12328 | loss 2.4540 | lr 3.01e-05 | grad_norm 0.52 | 66.0K tok/s | 显存 8.24/9.14 GiB
+step  12200 | 验证 loss 1.4519
+step  12220/12328 | loss 2.4543 | lr 3.01e-05 | grad_norm 0.50 | 60.9K tok/s | 显存 8.24/9.14 GiB
+step  12240/12328 | loss 2.4462 | lr 3.00e-05 | grad_norm 0.51 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  12260/12328 | loss 2.4670 | lr 3.00e-05 | grad_norm 0.52 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step  12280/12328 | loss 2.4599 | lr 3.00e-05 | grad_norm 0.52 | 65.9K tok/s | 显存 8.24/9.14 GiB
+step  12300/12328 | loss 2.4444 | lr 3.00e-05 | grad_norm 0.52 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step  12320/12328 | loss 2.4599 | lr 3.00e-05 | grad_norm 0.52 | 65.8K tok/s | 显存 8.24/9.14 GiB
+step  12328 | 已保存 checkpoint 到 /root/autodl-tmp/runs/pre_full
+训练完成。用 sample.py 可以对话测试，或继续下一段课程（4K/10K）。

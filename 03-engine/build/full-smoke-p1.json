@@ -1,0 +1,202 @@
+{
+  "note": "Random default-model weights; short-context correctness/throughput only, not trained capability or 10K speed.",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu": "Intel(R) Core(TM) 5 220H",
+  "torch": "2.4.1+cpu",
+  "binary": "hybrid-cpu-native.exe",
+  "binary_sha256": "17464931be4da962a5a0b42500c01e2da61b533ecbfebf73b936a811a7688d5d",
+  "parameters": 104555708,
+  "inference_parameters": 100162108,
+  "runs": {
+    "f32": {
+      "file_bytes": 400674884,
+      "native_vs_oracle_max_abs": 4.947185516357422e-06,
+      "quant_vs_original_rms": 0.0,
+      "info": {
+        "cache_bytes": 56729600,
+        "context": 10240,
+        "metadata": {
+          "architecture": "hybrid100m-v1",
+          "config": {
+            "conv_kernel_size": 4,
+            "full_attention_interval": 4,
+            "gradient_checkpointing": true,
+            "head_dim": 64,
+            "hidden_size": 512,
+            "initializer_range": 0.02,
+            "intermediate_size": 1920,
+            "linear_attention": "kda",
+            "linear_backend": "fla",
+            "linear_gate_rank": 128,
+            "linear_head_dim": 128,
+            "linear_num_heads": 4,
+            "loss_backend": "cce",
+            "loss_chunk_size": 128,
+            "max_position_embeddings": 10240,
+            "mtp_loss_weight": 0.1,
+            "mtp_num_layers": 1,
+            "num_attention_heads": 8,
+            "num_hidden_layers": 20,
+            "num_key_value_heads": 2,
+            "rms_norm_eps": 1e-06,
+            "rope_beta_fast": 32,
+            "rope_beta_slow": 1,
+            "rope_factor": 5,
+            "rope_original_max_position_embeddings": 2048,
+            "rope_theta": 10000,
+            "rope_type": "yarn",
+            "rotary_fraction": 1,
+            "sdpa_backend": "flash",
+            "tie_word_embeddings": true,
+            "vocab_size": 32768
+          },
+          "inference_branch": "main",
+          "omitted_training_tensors": 14,
+          "quantization": "f32",
+          "tensor_count": 277,
+          "tokenizer": "bytelevel-bpe-v1"
+        },
+        "threads": 4
+      },
+      "benchmarks": {
+        "1": {
+          "cache_bytes": 56729600,
+          "context": 10240,
+          "decode_tokens": 8,
+          "prompt_tokens": 8,
+          "runs": [
+            {
+              "decode_ms": 228.7943,
+              "decode_tokens_per_second": 34.96590605622605,
+              "prefill_ms": 194.9991,
+              "prefill_tokens_per_second": 41.02583037562737
+            },
+            {
+              "decode_ms": 207.5166,
+              "decode_tokens_per_second": 38.55113277684773,
+              "prefill_ms": 190.1374,
+              "prefill_tokens_per_second": 42.07483640777669
+            }
+          ],
+          "threads": 1
+        },
+        "4": {
+          "cache_bytes": 56729600,
+          "context": 10240,
+          "decode_tokens": 8,
+          "prompt_tokens": 8,
+          "runs": [
+            {
+              "decode_ms": 150.5977,
+              "decode_tokens_per_second": 53.12166122058969,
+              "prefill_ms": 162.023,
+              "prefill_tokens_per_second": 49.37570591829555
+            },
+            {
+              "decode_ms": 159.975,
+              "decode_tokens_per_second": 50.00781372089389,
+              "prefill_ms": 137.6128,
+              "prefill_tokens_per_second": 58.1341270579481
+            }
+          ],
+          "threads": 4
+        }
+      }
+    },
+    "q8": {
+      "file_bytes": 101273907,
+      "native_vs_oracle_max_abs": 4.76837158203125e-06,
+      "quant_vs_original_rms": 0.021173009648919106,
+      "info": {
+        "cache_bytes": 56729600,
+        "context": 10240,
+        "metadata": {
+          "architecture": "hybrid100m-v1",
+          "config": {
+            "conv_kernel_size": 4,
+            "full_attention_interval": 4,
+            "gradient_checkpointing": true,
+            "head_dim": 64,
+            "hidden_size": 512,
+            "initializer_range": 0.02,
+            "intermediate_size": 1920,
+            "linear_attention": "kda",
+            "linear_backend": "fla",
+            "linear_gate_rank": 128,
+            "linear_head_dim": 128,
+            "linear_num_heads": 4,
+            "loss_backend": "cce",
+            "loss_chunk_size": 128,
+            "max_position_embeddings": 10240,
+            "mtp_loss_weight": 0.1,
+            "mtp_num_layers": 1,
+            "num_attention_heads": 8,
+            "num_hidden_layers": 20,
+            "num_key_value_heads": 2,
+            "rms_norm_eps": 1e-06,
+            "rope_beta_fast": 32,
+            "rope_beta_slow": 1,
+            "rope_factor": 5,
+            "rope_original_max_position_embeddings": 2048,
+            "rope_theta": 10000,
+            "rope_type": "yarn",
+            "rotary_fraction": 1,
+            "sdpa_backend": "flash",
+            "tie_word_embeddings": true,
+            "vocab_size": 32768
+          },
+          "inference_branch": "main",
+          "omitted_training_tensors": 14,
+          "quantization": "q8",
+          "tensor_count": 277,
+          "tokenizer": "bytelevel-bpe-v1"
+        },
+        "threads": 4
+      },
+      "benchmarks": {
+        "1": {
+          "cache_bytes": 56729600,
+          "context": 10240,
+          "decode_tokens": 8,
+          "prompt_tokens": 8,
+          "runs": [
+            {
+              "decode_ms": 85.5828,
+              "decode_tokens_per_second": 93.47672663198679,
+              "prefill_ms": 76.0737,
+              "prefill_tokens_per_second": 105.16117922488324
+            },
+            {
+              "decode_ms": 86.4281,
+              "decode_tokens_per_second": 92.5624883573745,
+              "prefill_ms": 77.6033,
+              "prefill_tokens_per_second": 103.08839959125449
+            }
+          ],
+          "threads": 1
+        },
+        "4": {
+          "cache_bytes": 56729600,
+          "context": 10240,
+          "decode_tokens": 8,
+          "prompt_tokens": 8,
+          "runs": [
+            {
+              "decode_ms": 50.0183,
+              "decode_tokens_per_second": 159.9414614251184,
+              "prefill_ms": 46.9066,
+              "prefill_tokens_per_second": 170.5516920859751
+            },
+            {
+              "decode_ms": 53.2104,
+              "decode_tokens_per_second": 150.34654879497242,
+              "prefill_ms": 43.2633,
+              "prefill_tokens_per_second": 184.91423446662645
+            }
+          ],
+          "threads": 4
+        }
+      }
+    }
+  }
+}

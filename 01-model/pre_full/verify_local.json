@@ -1,0 +1,11 @@
+{
+  "run": "pre_full",
+  "params": 104555708,
+  "state_dict_tensors": 292,
+  "layers": 20,
+  "linear_attention": "kda",
+  "mtp_num_layers": 1,
+  "vocab_size": 32768,
+  "logits_finite": true,
+  "generated": "实现人工智能的重要手段之一。机器学习是指"
+}

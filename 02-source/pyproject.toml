@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hybrid100m"
+version = "0.1.0"
+description = "100M Chinese hybrid KDA / gated GQA language model with serial MTP"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.4"]
+
+[project.optional-dependencies]
+training = ["numpy", "tokenizers"]
+cuda = ["torch>=2.7", "triton>=3.3", "flash-linear-attention>=0.4,<0.7", "cut-cross-entropy @ git+https://github.com/apple/ml-cross-entropy.git@b7a02791b234e187b524fb1dba6a812d521b203a"]
+
+[tool.setuptools.packages.find]
+include = ["hybrid100m*"]

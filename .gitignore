@@ -1,0 +1,59 @@
+# 模型权重：全部不纳入 Git，统一托管在 Hugging Face（见 README「模型下载」一节）
+# 仓库只保留代码 + 配置 + 分词器 + 训练日志，clone 后按 README 下载权重即可运行
+01-model/sft2_q8.h100
+01-model/sft_2/model.pt
+01-model/sft_2/ckpt.pt
+01-model/pre_full/model.pt
+01-model/pre_full/ckpt.pt
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+.venv/
+venv/
+env/
+
+# Python 构建产物（注意：只匹配根目录的 build/，不要误伤 03-engine/build/）
+/build/
+
+# 测试与缓存
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+tmp/
+*.tmp
+probe-*/
+
+# C++ 构建中间产物（保留已编译二进制用于直接运行）
+03-engine/build/CMakeFiles/
+03-engine/build/CMakeCache.txt
+03-engine/build/cmake_install.cmake
+03-engine/build/Makefile
+03-engine/build/build.ninja
+03-engine/build-release/
+*.o
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+
+# 编辑器与系统
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# 数据与训练产物（体积大，按需自行生成）
+*.jsonl
+*.bin
+runs/
+data/
+data_full/
